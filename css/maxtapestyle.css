@@ -1,16 +1,14 @@
 /*
 Colors used:
-Primary Color (Yellow): #FFDE74;
-Secondary Color (Magenta): #F15C7B;
-Tertiary Color (Cyan): #79BDEB;
+Primary Color (Purple): #BF00BE;
 */
 
-  img {
+img {
     width: 100%;
   }
 
   body {
-    background-color: #ffffff;
+    background-color: #000000;
     font-family: 'EB Garamond', serif;
     font-size: 30px; /* Sets the font size to 16px */
     font-weight: 400; /* Sets the font weight to 300 */
@@ -62,17 +60,18 @@ Tertiary Color (Cyan): #79BDEB;
 
   a:hover,
 a:focus {
-  color: #000000;
+  color: #bf00bf52;
   text-decoration: underline;
 } 
 
 .buttonprojects {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #FFDE74;
-  color: #F15C7B; /* needed to override the default link color */
+  background-color: #000000;
+  color: #BF00BE; /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
+  border: 2px solid #BF00BE;
   transition: 0.2s opacity;
   font-family: 'Archivo';
   font-size: 20px;
@@ -87,10 +86,11 @@ a:focus {
 
 .buttonabout {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #F15C7B;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #000000;
+  color: #BF00BE; /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
+  border: 2px solid #BF00BE;
   border-radius: 3px;
   transition: 0.2s opacity;
   font-family: 'Archivo';
@@ -104,10 +104,11 @@ a:focus {
 
 .buttoncontact {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #79BDEB;
-  color: #F15C7B; /* needed to override the default link color */
+  background-color: #000000;
+  color: #BF00BE; /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
+  border: 2px solid #BF00BE;
   border-radius: 3px;
   transition: 0.2s opacity;
   font-family: 'Archivo';
@@ -121,7 +122,7 @@ a:focus {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #F15C7B;
+  background-color: #BF00BE;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
@@ -139,14 +140,14 @@ a:focus {
   text-decoration: none;
 }
 .button.contact {
-  background-color: transparent;
-  color: #F15C7B;
+  background-color:#BF00BE ;
+  color: #000000;
   text-transform: uppercase;
-  border: 2px solid #F15C7B;
+  border: 2px solid #BF00BE;
 }
 .button.contact:hover {
-  background-color: #F15C7B;
-  color: #ffffff;
+  background-color: #000000;
+  color: #BF00BE;
 }
 
 .button {font-family: 'Archivo'; font-size: 20px; letter-spacing: -1px; font-weight: 1000; color: #ffffff; 
