@@ -44,8 +44,9 @@ Tertiary Color (Cyan): #79BDEB;
   }
 
   a:visited { /* visited link */
-    color:
+    color: 
   }
+  
   a:active { /* selected link */
     color: #000000;
   }
