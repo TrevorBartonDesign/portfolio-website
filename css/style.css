@@ -4,7 +4,17 @@ Primary Color (Yellow): #FFDE74;
 Secondary Color (Magenta): #F15C7B;
 Tertiary Color (Cyan): #79BDEB;
 */
+* {
+  box-sizing: border-box;
+}
 
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  margin: 10px;
+  text-align: center;
+  border-bottom: 3px solid #ffffff;
+}
   img {
     width: 100%;
   }
@@ -12,7 +22,7 @@ Tertiary Color (Cyan): #79BDEB;
   body {
     background-color: #ffffff;
     font-family: 'EB Garamond', serif;
-    font-size: 30px; /* Sets the font size to 16px */
+    font-size: 25px; /* Sets the font size to 16px */
     font-weight: 400; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     letter-spacing: -.3px;
@@ -23,7 +33,7 @@ Tertiary Color (Cyan): #79BDEB;
     line-height: 1.4;
   }
   h1 {
-    font-size: 69px;
+    font-size: 50px;
     font-weight: 400;
     letter-spacing: -3px;
   }
@@ -151,4 +161,47 @@ a:focus {
 }
 
 .button {font-family: 'Archivo'; font-size: 20px; letter-spacing: -1px; font-weight: 1000; color: #ffffff; 
+}
+
+.bold {font-family: 'Archivo'; font-size: 25px; letter-spacing: -1px; font-weight: 1000; color: #000000; 
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center; /* centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  width: 100;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
