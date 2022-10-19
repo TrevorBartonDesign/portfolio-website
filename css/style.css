@@ -70,10 +70,10 @@ html {
 }
 header {
   background-color: #ffffff;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   margin: 10px;
-  text-align: center;
   border-bottom: 3px solid #ffffff;
+
 }
   img {
     width: 100%;
@@ -93,9 +93,9 @@ header {
     line-height: 1.4;
   }
   h1 {
-    font-size: 2.3em;
+    font-size: 1.5em;
     font-weight: 400;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
   }
   
   h2 {
@@ -108,15 +108,18 @@ header {
     font-family: "Archivo Black";
     font-size: 1.4em;
     font-weight: 100;
+    margin-top: 0;
+    margin: 0;
   }
   h4 {
     font-size: 1.35em;
     font-weight: 400;
   }
 
-  a:visited { /* visited link */
+  /*a:visited { /* visited link 
     color: 
-  }
+  } 
+  */
   
   a:active { /* selected link */
     color: #000000;
@@ -267,23 +270,29 @@ a:focus {
 .row {
   content: "";
   clear: both;
-  display: table;
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+/*#projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }*/
 
 #hero h1 {
   text-align: center; /* centers text */
 }
 
+/*.img-same {
+  float: left;
+    width:  358px;
+    height: 202px;
+    object-fit: cover;
+}
+*/
 .linkedin {
   width: 50px;
   height: 50px;
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 75px;
 }
 
 .my_picture {
@@ -296,17 +305,49 @@ a:focus {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  text-align: right;
 }
-nav > ul > li {
-  display: inline-block;
-  width: 100;
-}
+
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display:block;
+  padding: 5px 0;
+  /*border-top: 1px solid rgba(0, 0, 0, 0.5);*/
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+/*.pinkbacking {
+  background-color: #F15C7B;
+  border-radius: 25px;
+}*/
 
 #hero {
   background-color: #ffffff;
@@ -352,6 +393,22 @@ Medium devices (640px and larger)
     letter-spacing: -4.5px;
   }
   
+  nav > ul > li {
+    display: inline-block;
+    width: 100;
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
   
 }
 /* ==============================
@@ -363,11 +420,9 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
+  .col-md-6 {
+    width: 33.33%;
+    padding: 0px;
   }
   h1 {
     font-size: 3em;
