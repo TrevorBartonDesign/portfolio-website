@@ -96,6 +96,7 @@ header {
     font-size: 1.5em;
     font-weight: 400;
     letter-spacing: -2px;
+    margin-bottom: 100px;
   }
   
   h2 {
@@ -274,6 +275,15 @@ a:focus {
 }
 
 /*#projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }*/
+.flex-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.flex-item {
+  width: 100%;
+
+}
 
 #hero h1 {
   text-align: center; /* centers text */
@@ -296,12 +306,8 @@ a:focus {
 }
 
 .my_picture {
-  float: left;
-  display: block;
-  margin-left: 10px;
-  margin-right: 10px;
   margin: 10px;
-  width: 50%;
+  width: 100%;
   max-width: 400px;
 }
 nav > ul {
@@ -352,7 +358,7 @@ nav > ul > li > a {
   margin-left: 10px;
   margin-right: auto;
   background-size: auto;
-}*/
+}
 
 #hero {
   background-color: #ffffff;
@@ -370,6 +376,7 @@ nav > ul > li > a {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
   .logo {
     max-width: 100px;
   }
@@ -414,6 +421,17 @@ Medium devices (640px and larger)
   .navtoggle, .navtoggle.responsive {
     position: relative;
   }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .flex-item {
+    width: 50%;
+  
+  }
   
 }
 /* ==============================
@@ -435,6 +453,16 @@ Large devices (1024px or larger)
     letter-spacing: -4.5px;
   }
   
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .flex-item {
+    width: 33.33%;
+  
+  }
 
 }
 /* ==============================
