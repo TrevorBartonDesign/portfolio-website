@@ -7,3 +7,16 @@ function menuToggle() {
       x.className = 'navtoggle';
     }
   }
+
+  function changeImage()
+{
+var img = document.getElementById("img/Logo.svg");
+img.src="img/LogoDark.svg";
+return false;
+}
+
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    
+  }
