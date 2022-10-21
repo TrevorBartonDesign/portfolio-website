@@ -1,51 +1,76 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=EB Garamond">
   <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Archivo">
-<html lang="en" dir="ltr">
-  <head>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Archivo Black">
+    <script src="https://kit.fontawesome.com/26d610ac7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
-    <title>Projects</title>
+    <title>About</title>
   </head>
-  <body>
+  <body id="audyssey">
     <header id="top">
       <div class="container">
-        <img id="logo" src="img/LogoAudyssey.svg" alt="Logo"
-        class="logo">
-        <nav id="navbar">
-          <ul class="navigation">
-            <li><a href="index.html" class="buttonprojects">Projects</a></li>
-            <li><a href="about.html" class="buttonabout">About</a></li>
-            <li><a href="#contact" class="buttoncontact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-     </header>
-    <main>
-      <div class="row">
-        <div class="column col-md-6 col-lg-7">
-          <picture>
-             <source srcset="img/audyssey/audyssey@1x.png" media="(max-width:767px)">
-             <img src="img/audyssey/audyssey@2x.png" alt="Audyssey App Cover Photo">
-          </picture>
+        <div class="navtoggle" id="myNavtoggle">
+          <img
+            id="logo"
+            src="img/Logo.svg"
+            alt="Logo"
+            href="index.html"
+            class="logo"
+          />
+          <img class="DarkModeButton" src="img/DarkMode.svg" height="25" width="25" onclick="darkMode()">
+          <nav id="navbar">
+            <ul class="navigation">
+              <li><a href="index.html#projects" class="buttonprojects">Projects</a></li>
+              <li><a href="about.html" class="buttonabout">About</a></li>
+              <li>
+                <a href="#contact" class="buttoncontact" onclick="menuToggle()"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-          <div div class="column col-md-6 col-lg-5">
-          <h3>Audyssey</h3>
-          <p>
-            A native tool for composers, designed for both iOS and Android. Featuring a skeuomorphic piano keyboard modeled from physical hardware.
-          </p>
-          <p>
-            User Research, Usability Testing, Wireframing & Prototyping, UX & UI Design
-          </p>
-          <a href="audyssey.html" class="button detailed">Long Case Study</a>
-          <a href="audyssey.html" class="button">Quick Case Study</a>
-          </div>
       </div>
-     </main>
+    </header>
+    <main>
+      <div id="hero">
+        <h1 class="fade-in" style="text-align: center; margin: 10px; margin-bottom: 100px;">Audyssey</h1>
+        <div id="about" class="flex-container" style="margin: 10px;">
+          <div class="about-flex">
+            <img
+              src="img/audyssey/audyssey@2x.png"
+              alt="Audyssey App Cover Photo"
+            />
+          </div>
+             <div class="about-flex"><h3 class="magentabacking" style="text-align: center;">About</h3>
+            <p style="margin: 10px;"><b>Audyssey</b> is a native app for <b>iOS</b> and <b>Android</b> that provides tools for composers
+               to <b>play</b> and <b>record</b> ideas on the go, as well as a curated collection of <b>challenges</b> and 
+               easy-to-understand music theory <b>lessons</b> for beginners and professionals alike to brush
+                up on their composition skills.</p>
+              <div style="margin: 10px;"><a href="mailto:office@careerfoundry.com" class="button contact">View Case Study</a><a syle="margin-left: 10px;" href="mailto:office@careerfoundry.com" class="button contact">View Case Study</a></div>
+          </div>
+
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+    </main>
     <footer id="contact">
       <div class="container">
         <h2>Let's connect!</h2>
@@ -57,7 +82,8 @@
         </div>
         <div>
           <a href="https://www.linkedin.com/in/trevor-barton-7a9500236/" target="_blank">
-            <img src="img/iconmonstr-linkedin-2.svg" alt="LinkedIn Logo" class="linkedin">             </a>
+            <br>
+            <img src="img/LinkedinLogo.svg" alt="LinkedIn Logo" class="linkedin"></a>
           <a>
           </a>
           <a>
@@ -69,122 +95,7 @@
       </div>
 
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
   </body>
 </html>
-
-<!--
-            <div class="row">
-            <div class="column col-md-6 col-lg-7">
-              <picture>
-                 <source srcset="img/audyssey/audyssey@1x.png" media="(max-width:767px)">
-                 <img src="img/audyssey/audyssey@2x.png" alt="Audyssey App Cover Photo">
-              </picture>
-            </div>
-              <div div class="column col-md-6 col-lg-5">
-              <h3>Audyssey</h3>
-              <p>
-                A native tool for composers, designed for both iOS and Android. Featuring a skeuomorphic piano keyboard modeled from physical hardware.
-              </p>
-              <p>
-                User Research, Usability Testing, Wireframing & Prototyping, UX & UI Design
-              </p>
-              <a href="audyssey.html" class="button detailed">Long Case Study</a>
-              <a href="audyssey.html" class="button">Quick Case Study</a>
-              </div>
-          </div>
-          <div class="row">
-            <div class="column col-md-6 col-lg-7">
-              <picture>
-                <source srcset="img/mystik/mystik@1x.png" media="(max-width:767px)">
-                <img src="img/mystik/mystik@2x.png" alt="Mystik Records App Cover Photo">
-              </picture>
-            </div>
-              <div class="column col-md-6 col-lg-5">
-              <h3>Mystik Records</h3>
-              <p>
-                A groovy responsive e-commerce store for the Mystik Records music label. I designed everything from the logo to the final screens, utilizing a modern, yet familiar design, and running several user tests.
-              </p>
-              <p>
-                User Research, Usability Testing, Wireframing & Prototyping, UX & UI Design
-              </p>
-              <a href="audyssey.html" class="button detailed">Long Case Study</a>
-              <a href="audyssey.html" class="button">Quick Case Study</a>
-              </div>
-          </div>
-          <div class="row">
-            <div class="column col-md-6 col-lg-7">
-              <picture>
-                <source srcset="img/notee/notee@1x.png" media="(max-width:767px)">
-                <img src="img/notee/notee@2x.png" alt="Notee App Cover Photo">
-              </picture>
-            </div>
-              <div class="column col-md-6 col-lg-5">
-              <h3>Notee</h3>
-              <p>
-               A minimalist native note-taking app for iOS, designed as a meditation on Dieter Rams’ motto: “Less, but better.”
-              </p>
-              <p>
-                User Research, Usability Testing, Wireframing & Prototyping, UX & UI Design
-              </p>
-              <a href="audyssey.html" class="button detailed">Long Case Study</a>
-              <a href="audyssey.html" class="button">Quick Case Study</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column col-md-6 col-lg-7">
-              <picture>
-                <source srcset="img/ingrecipe/ingrecipe@1x.png" media="(max-width:767px)">
-                <img src="img/ingrecipe/ingrecipe@2x.png" alt="Ingrecipe App Cover Photo">
-              </picture>
-            </div>
-            <div class="column col-md-6 col-lg-5">
-              <h3>Ingrecipe</h3>
-              <p>
-                A cheeky responsive recipe app with a bold, mid-century style. I interviewed several users, and researched multiple competitors to design an app that’s easy to use when grocery shopping  and while cooking in the kitchen.
-              </p>
-              <p>
-                User Research, Usability Testing, Wireframing & Prototyping, UX & UI Design
-              </p>
-              <a href="audyssey.html" class="button detailed">Long Case Study</a>
-              <a href="audyssey.html" class="button">Quick Case Study</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column col-md-6 col-lg-7">
-              <picture>
-                <source srcset="img/chatty/chatty@1x.png" media="(max-width:767px)">
-                <img src="img/chatty/chatty@2x.png" alt="Chatty App Cover Photo">
-              </picture>
-            </div>
-            <div class="column col-md-6 col-lg-5">
-              <h3>Chatty</h3>
-              <p>
-                A simple, cozy messaging app.
-              </p>
-              <p>
-                User Research, Usability Testing, Wireframing & Prototyping, UX & UI Design
-              </p>
-              <a href="audyssey.html" class="button detailed">Long Case Study</a>
-              <a href="audyssey.html" class="button">Quick Case Study</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column col-md-6 col-lg-7">
-              <picture>
-                <source srcset="img/maxtape/maxtape@1x.png" media="(max-width:767px)">
-                <img src="img/maxtape/maxtape@2x.png" alt="MaxTape App Cover Photo">
-              </picture>
-            </div>
-            <div class="column col-md-6 col-lg-5">
-              <h3>MaxTape</h3>
-              <p>
-                An 80s music player that lets users share virtual mixtapes with friends.
-              </p>
-              <p>
-                User Research, Usability Testing, Wireframing & Prototyping, UX & UI Design
-              </p>
-              <a href="audyssey.html" class="button detailed">Long Case Study</a>
-              <a href="audyssey.html" class="button">Quick Case Study</a>
-            </div>
-          </div>-->

@@ -4,11 +4,28 @@ Primary Color (Yellow): #FFDE74;
 Secondary Color (Magenta): #F15C7B;
 Tertiary Color (Cyan): #79BDEB;
 */
+
 html {
   scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
+}
+
+#columnlist1 ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+#columnlist2 ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+#columnlist3 ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 .fade-in {
@@ -22,6 +39,9 @@ html {
 .dark-mode {
   background-color: black;
   color: white;
+
+  bold {font-family: 'Archivo'; font-size: 20px; letter-spacing: -.5px; font-weight: 1000; color: black; 
+  }
 }
 
 @keyframes fadeIn {
@@ -84,13 +104,13 @@ header {
   }
 
   body {
-    background-color: #ffffff;
+    background-color: white;
     font-family: 'EB Garamond', serif;
     font-size: 25px; /* Sets the font size to 16px */
     font-weight: 400; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     letter-spacing: -.3px;
-    color: #000000;
+    color: black;
   }
   
   h1, h2, h3, h4 {
@@ -100,7 +120,8 @@ header {
     font-size: 1.6em;
     font-weight: 400;
     letter-spacing: -2px;
-    margin-bottom: 100px;
+    margin-bottom: 35px;
+    margin-top: 0px;
   }
   
   h2 {
@@ -171,7 +192,7 @@ a:focus {
 .buttonabout {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #F15C7B;
-  color: #ffffff; /* needed to override the default link color */
+  color: #FFDE74; /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
@@ -261,7 +282,7 @@ a:focus {
 .button {font-family: 'Archivo'; font-size: 20px; letter-spacing: -1px; font-weight: 1000; color: #ffffff; 
 }
 
-.bold {font-family: 'Archivo'; font-size: 20px; letter-spacing: -.5px; font-weight: 1000; color: #000000; 
+.bold {font-family: 'Archivo'; font-size: 20px; letter-spacing: -.5px; font-weight: 1000; color: black; 
 }
 
 /* Layout styling */
@@ -295,6 +316,13 @@ a:focus {
 
 }
 
+.flex-project {
+  margin: 10px;
+  width: 100%;
+  align-content:space-between;
+
+}
+
 .about-flex {
   width: 100%;
   align-content:space-between;
@@ -313,7 +341,8 @@ a:focus {
   margin-left: 10px;
   margin-right: auto;
   background-size: auto;
-  margin: 10px
+  margin: 10px;
+  color:#010000;
 }
 
 #hero h1 {
@@ -330,6 +359,14 @@ a:focus {
 .linkedin {
   width: 50px;
   height: 50px;
+}
+
+.DarkModeButton {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 20%;
+  top: 4.6%;
 }
 
 .logo {
@@ -387,7 +424,9 @@ nav > ul > li > a {
   margin-left: 10px;
   margin-right: auto;
   background-size: auto;
-  margin: 10px
+  margin: 10px;
+  margin-top: 0px;
+  color:#010000;
 }
 
 .yellowbacking {
@@ -396,7 +435,8 @@ nav > ul > li > a {
   margin-left: 10px;
   margin-right: auto;
   background-size: auto;
-  margin: 10px
+  margin: 10px;
+  color:#010000;
 }
 
 #hero {
@@ -448,6 +488,7 @@ Medium devices (640px and larger)
     font-size: 2.5em;
     font-weight: 400;
     letter-spacing: -4.5px;
+    margin-bottom: 90px;
   }
   
   nav > ul > li {
@@ -478,6 +519,12 @@ Medium devices (640px and larger)
   
   }
 
+  .flex-project {
+    margin: 10px;
+    width: 50%;
+  
+  }
+
   .about-flex {
     width: 50%;
   
@@ -489,6 +536,14 @@ Medium devices (640px and larger)
 
   .my_picture {
     max-width: 98%;
+}
+
+.DarkModeButton {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0%;
+  top: 0%;
 }
 }
 /* ==============================
@@ -508,6 +563,8 @@ Large devices (1024px or larger)
     font-size: 3em;
     font-weight: 400;
     letter-spacing: -4.5px;
+    margin-bottom: 150px;
+    margin-top: 40px;
   }
   
   .flex-container {
@@ -518,6 +575,12 @@ Large devices (1024px or larger)
   
   .flex-item {
     width: 33.33%;
+  
+  }
+
+  .flex-project {
+    margin: 10px;
+    width: 50%;
   
   }
 
@@ -534,6 +597,10 @@ Large devices (1024px or larger)
   .my_picture{
     max-width: 94%;
 }
+
+#audyssey .about-flex {
+  width: 50%;
+}
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -541,7 +608,7 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
 }
 
-@keyframes color-change {
+/*@keyframes color-change {
   from {fill: #edc655;}
   to {fill: #f76414;}
 }
@@ -562,4 +629,4 @@ X-large devices (1440px or larger)
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
+}*/

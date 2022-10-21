@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script>
+      function darkMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
     <script
       src="https://kit.fontawesome.com/26d610ac7f.js"
       crossorigin="anonymous"
@@ -28,14 +34,6 @@
     <title>Projects</title>
   </head>
 <body>
-  <!--<button onclick="myFunction(), changeImage()">Toggle dark mode</button>
-
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script> -->
     <header id="top">
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
@@ -46,6 +44,7 @@ function myFunction() {
             href="index.html"
             class="logo"
           />
+          <img class="DarkModeButton" src="img/DarkMode.svg" height="25" width="25" onclick="darkMode()">
           <nav id="navbar">
             <ul class="navigation">
               <li><a href="#projects" class="buttonprojects">Projects</a></li>
@@ -141,30 +140,30 @@ function myFunction() {
                 class="img-same" /></a>
             </picture></div>
         
-    <footer id="contact" class="column col-md-6 col-lg-7">
-      <h2>Let's connect!</h2>
-      <div>
-        <a href="mailto:office@careerfoundry.com" class="button contact"
-          >Send me an email</a
-        >
-      </div>
-      <div>
-        <a
-          href="https://www.linkedin.com/in/trevor-barton-7a9500236/"
-          target="_blank"
-        >
-          <br />
-          <img
-            src="img/iconmonstr-linkedin-2.svg"
-            alt="LinkedIn Logo"
-            class="linkedin"
-        /></a>
-        <a> </a>
-        <a> </a>
-        <a> </a>
-      </div>
-      <p>Copyright Trevor Barton 2022</p>
-    </footer>
+            <footer id="contact">
+              <div class="container">
+                <h2>Let's connect!</h2>
+                <p>
+        
+                </p>
+                <div>
+                  <a href="mailto:office@careerfoundry.com" class="button contact">Send me an email</a>
+                </div>
+                <div>
+                  <a href="https://www.linkedin.com/in/trevor-barton-7a9500236/" target="_blank">
+                    <br>
+                    <img src="img/LinkedinLogo.svg" alt="LinkedIn Logo" class="linkedin"></a>
+                  <a>
+                  </a>
+                  <a>
+                  </a>
+                  <a>
+                  </a>
+                </div>
+                <p>Copyright Trevor Barton 2022</p>
+              </div>
+        
+            </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
