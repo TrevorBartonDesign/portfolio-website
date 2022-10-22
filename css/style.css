@@ -366,7 +366,7 @@ a:focus {
   height: 25px;
   position: absolute;
   right: 20%;
-  top: 4.6%;
+  top: 2.53%;
 }
 
 .logo {
@@ -406,7 +406,7 @@ nav > ul > li > a {
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 0px 0 0;
 }
 .navtoggle.responsive li  {
   display:block;
