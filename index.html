@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script>
-      function darkMode() {
-         var element = document.body;
-         element.classList.toggle("dark-mode");
-      }
-      </script>
     <script
       src="https://kit.fontawesome.com/26d610ac7f.js"
       crossorigin="anonymous"
@@ -44,7 +38,7 @@
             href="index.html"
             class="logo"
           />
-          <img class="DarkModeButton" src="img/DarkMode.svg" height="25" width="25" onclick="darkMode()">
+          <a onclick="toggleDarkMode()" id="darkButton" class="darkButton"><img class="DarkModeButton" src="img/DarkMode.svg" height="25" width="25"></a>
           <nav id="navbar">
             <ul class="navigation">
               <li><a href="#projects" class="buttonprojects">Projects</a></li>
