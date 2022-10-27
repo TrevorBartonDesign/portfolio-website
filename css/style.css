@@ -1,13 +1,14 @@
 /*
 Colors used:
 Primary Color (Yellow): #FFDE74;
-Secondary Color (Magenta): #F15C7B;
-Tertiary Color (Cyan): #79BDEB;
+Secondary Color (Magenta): #F15C7B; #EE355C; #C21036; #C21070
+Tertiary Color (Cyan): #79BDEB; #C9E4F7; #BBEEF5
 */
 
 html {
   scroll-behavior: smooth;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -17,11 +18,13 @@ html {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
+
 #columnlist2 ul {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
 }
+
 #columnlist3 ul {
   columns: 2;
   -webkit-columns: 2;
@@ -43,47 +46,52 @@ html {
 
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-ms-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
-}
+    opacity: 1;
+  }
 }
 
 .animation {
@@ -91,195 +99,190 @@ html {
   max-width: 100%;
   height: auto;
 }
+
 header {
   padding: 10px 0 4px;
   margin: 10px;
-
 }
-  img {
-    width: 100%;
-  }
 
-  body {
-    background-color: black;
-    font-family: 'EB Garamond', serif;
-    font-size: 25px; /* Sets the font size to 16px */
-    font-weight: 400; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    letter-spacing: -.3px;
-    color: white;
-  }
-  
-  h1, h2, h3, h4 {
-    line-height: 1.4;
-  }
-  h1 {
-    font-size: 1.6em;
-    font-weight: 400;
-    letter-spacing: -2px;
-    margin-bottom: 35px;
-    margin-top: 0px;
-  }
-  
-  h2 {
-    font-size: 55px;
-    font-weight: 400;
-    letter-spacing: -3px;
-  }
-  
-  h3 {
-    font-family: "Archivo Black";
-    font-size: 1.1em;
-    font-weight: 100;
-    margin-top: 0;
-    margin: 0;
-  }
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-  }
+img {
+  width: 100%;
+}
 
-  /*a:visited { /* visited link 
-    color: 
-  } 
-  */
-  
-  a:active { /* selected link */
-    color: #000000;
-  }
+body {
+  background-color: black;
+  font-family: 'EB Garamond', serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.3px;
+  color: white;
+}
 
-  a {
-    color: #F15C7B;
-    text-decoration: none; /* No underlining */
-  }
-  /*a:hover {
-    color: #FFDE74;
-    text-decoration: underline; /* Underlining when hovering over a link 
-  } 
-  */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
 
-  /*a:hover,
-a:focus {
-  color: #000000;
-  text-decoration: underline;
-} */
+h1 {
+  font-size: 1.6em;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+h3 {
+  font-family: "Archivo Black";
+  font-size: 1.1em;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+a:active {
+  color: #000;
+}
+
+a {
+  color: #f15c7b;
+  text-decoration: none;
+}
 
 .buttonprojects {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #FFDE74;
-  color: #F15C7B; /* needed to override the default link color */
+  display: inline-block;
+  background-color: #ffde74;
+  color: #f15c7b;
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
-  font-family: 'Archivo';
+  font-family: 'Archivo Black';
   font-size: 20px;
   letter-spacing: -1px;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   transition-property: color;
 }
 
 .buttonprojects:hover {
-  color: #000000;
-  /*opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  color: #000;
   text-decoration: none;
 }
 
-
 .buttonabout {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #F15C7B;
-  color: #FFDE74; /* needed to override the default link color */
+  display: inline-block;
+  background-color: #f15c7b;
+  color: #ffde74;
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
-  font-family: 'Archivo';
+  font-family: 'Archivo Black';
   font-size: 20px;
   letter-spacing: -1px;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   transition-property: color;
 }
+
 .buttonabout:hover {
-  color: #000000;
-  /*opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  color: #000;
   text-decoration: none;
 }
 
 .buttoncontact {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #79BDEB;
-  color: #F15C7B; /* needed to override the default link color */
+  display: inline-block;
+  background-color: #79bdeb;
+  color: #f15c7b;
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
-  font-family: 'Archivo';
+  font-family: 'Archivo Black';
   font-size: 20px;
   letter-spacing: -1px;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   transition-property: color;
 }
+
 .buttoncontact:hover {
-  color: #000000;
-  /*opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  color: #000;
   text-decoration: none;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #F15C7B;
-  color: #ffffff; /* needed to override the default link color */
+  display: inline-block;
+  background-color: #f15c7b;
+  color: #fff;
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
-  font-family: 'Archivo';
+  font-family: 'Archivo Black';
   font-size: 20px;
   letter-spacing: -1px;
-  color: #ffffff;
-  border: 2px solid #F15C7B;
-  transition-duration: 0.2s;
-  transition-property: opacity;
-  transition-duration: .3s;
+  border: 2px solid #f15c7b;
+  transition-duration: 0.3s;
   transition-property: color;
-  
-
 }
+
 .button:hover {
-  color: #000000;
-  /*opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  color: #000;
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
-  color: #F15C7B;
+  color: #f15c7b;
   text-transform: uppercase;
-  border: 2px solid #F15C7B;
-  transition-duration: .3s;
+  border: 2px solid #f15c7b;
+  transition-duration: 0.3s;
   transition-property: color;
 }
+
 .button.contact:hover {
-  background-color: #F15C7B;
-  color: #ffffff;
+  background-color: #f15c7b;
+  color: #fff;
 }
 
 .button.detailed {
   background-color: transparent;
-  color: #F15C7B;
-  border: 2px solid #F15C7B;
-  transition-duration: .3s;
+  color: #f15c7b;
+  border: 2px solid #f15c7b;
+  transition-duration: 0.3s;
   transition-property: color;
 }
+
 .button.detailed:hover {
-  background-color: #F15C7B;
-  color: #ffffff;
+  background-color: #f15c7b;
+  color: #fff;
 }
 
-.button {font-family: 'Archivo'; font-size: 20px; letter-spacing: -1px; font-weight: 1000; color: #ffffff; 
+.button {
+  font-family: 'Archivo';
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: 1000;
+  color: #fff;
 }
 
-.bold {font-family: 'Archivo'; font-size: 20px; letter-spacing: -.5px; font-weight: 1000; color: black; 
+.bold {
+  font-family: 'Archivo';
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  font-weight: 1000;
+  color: black;
 }
 
 /* Layout styling */
@@ -293,10 +296,9 @@ a:focus {
 .row {
   content: "";
   clear: both;
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
 }
 
-/*#projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }*/
 .flex-container {
   flex-direction: column;
   display: flex;
@@ -305,54 +307,40 @@ a:focus {
 #about .flex-container {
   flex-direction: column;
   display: flex;
-  
 }
 
 .flex-item {
   width: 100%;
-
 }
 
 .flex-project {
   margin: 10px;
   width: 100%;
-  align-content:space-between;
-
+  align-content: space-between;
 }
 
 .about-flex {
   width: 100%;
-  align-content:space-between;
-
+  align-content: space-between;
 }
 
 .aboutflex-img {
   width: 100%;
   align-content: space-between;
-
 }
 
 .cyanbacking {
-  background-color: #79BDEB;
+  background-color: #79bdeb;
   border-radius: 2px;
-  margin-left: 10px;
-  margin-right: auto;
   background-size: auto;
   margin: 10px;
-  color:#010000;
+  color: #010000;
 }
 
 #hero h1 {
-  text-align: center; /* centers text */
+  text-align: center;
 }
 
-/*.img-same {
-  float: left;
-    width:  358px;
-    height: 202px;
-    object-fit: cover;
-}
-*/
 .linkedin {
   width: 50px;
   height: 50px;
@@ -373,6 +361,7 @@ a:focus {
 .my_picture {
   margin: 10px;
 }
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -398,42 +387,38 @@ nav > ul > li > a {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
-  padding: 0px 0 0;
-}
-.navtoggle.responsive li  {
-  display:block;
-  padding: 5px 0;
-  /*border-top: 1px solid rgba(0, 0, 0, 0.5);*/
+  padding: 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li {
+  display: block;
+  padding: 5px 0;
+}
+
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 .magentabacking {
-  background-color: #F15C7B;
+  background-color: #f15c7b;
   border-radius: 2px;
-  margin-left: 10px;
-  margin-right: auto;
   background-size: auto;
   margin: 10px;
-  margin-top: 0px;
-  color:#010000;
+  margin-top: 0;
+  color: #010000;
 }
 
 .yellowbacking {
-  background-color: #FFDE74;
+  background-color: #ffde74;
   border-radius: 2px;
-  margin-left: 10px;
-  margin-right: auto;
   background-size: auto;
   margin: 10px;
-  color:#010000;
+  color: #010000;
 }
 
 #hero {
@@ -455,7 +440,6 @@ Medium devices (640px and larger)
     font-family: "Archivo Black";
     font-size: 1.4em;
     font-weight: 100;
-    margin-top: 0;
     margin: 0;
   }
 
@@ -472,14 +456,15 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
-    /*padding-top: 99px;*/
   }
 
   .col-md-6 {
     width: 50%;
   }
 
-  #about-page h3 { margin-top: 0;}
+  #about-page h3 {
+    margin-top: 0;
+  }
 
   h1 {
     font-size: 2.5em;
@@ -487,7 +472,7 @@ Medium devices (640px and larger)
     letter-spacing: -4.5px;
     margin-bottom: 90px;
   }
-  
+
   nav > ul > li {
     display: inline-block;
     width: 100;
@@ -501,48 +486,47 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-  .navtoggle, .navtoggle.responsive {
+
+  .navtoggle,
+  .navtoggle.responsive {
     position: relative;
   }
 
   .flex-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap row;
   }
-  
+
   .flex-item {
     width: 50%;
-  
   }
 
   .flex-project {
     margin: 10px;
     width: 50%;
-  
   }
 
   .about-flex {
     width: 50%;
-  
   }
+
   .aboutflex-img {
     width: 50%;
-  
-  }  
+  }
 
   .my_picture {
     max-width: 98%;
+  }
+
+  .DarkModeButton {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0%;
+    top: -7px;
+  }
 }
 
-.DarkModeButton {
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  right: 0%;
-  top: -7px;
-}
-}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -552,10 +536,12 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
   .col-md-6 {
     width: 33.33%;
-    padding: 0px;
+    padding: 0;
   }
+
   h1 {
     font-size: 3em;
     font-weight: 400;
@@ -563,67 +549,38 @@ Large devices (1024px or larger)
     margin-bottom: 150px;
     margin-top: 40px;
   }
-  
+
   .flex-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap row;
   }
-  
+
   .flex-item {
     width: 33.33%;
-  
   }
 
   .flex-project {
     margin: 10px;
     width: 50%;
-  
   }
 
   .about-flex {
     width: 33.33%;
-  
   }
 
   .aboutflex-img {
     width: 33.33%;
-  
   }
 
-  .my_picture{
+  .my_picture {
     max-width: 94%;
+  }
+
+  #audyssey .about-flex {
+    width: 50%;
+  }
 }
 
-#audyssey .about-flex {
-  width: 50%;
-}
-}
 /* ==============================
 X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
-
-/*@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}*/
+================================= @media only screen and (min-width: 1440px) */

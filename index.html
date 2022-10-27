@@ -1,52 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script
-      src="https://kit.fontawesome.com/26d610ac7f.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/26d610ac7f.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=EB%20Garamond">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Archivo"
-    >
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Archivo%20Black">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB%20Garamond">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo%20Black">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
     <title>Projects</title>
   </head>
-<body>
+  <body>
     <header id="top">
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
-          <img
-            id="logo"
-            src="img/Logo.svg"
-            alt="Logo"
-            class="logo">
-          <a onclick="toggleDarkMode()" id="darkButton" class="darkButton"><img alt="Dark Mode Button" class="DarkModeButton" src="img/DarkMode.svg" height="25" width="25"></a>
+          <img id="logo" src="img/Logo.svg" alt="Logo" class="logo">
+          <a onclick="toggleDarkMode()" id="darkButton" class="darkButton">
+            <img alt="Dark Mode Button" class="DarkModeButton" src="img/DarkMode.svg" height="25" width="25">
+          </a>
           <nav id="navbar">
             <ul class="navigation">
-              <li><a href="#projects" class="buttonprojects">Projects</a></li>
-              <li><a href="about.html" class="buttonabout">About</a></li>
-              <li><a href="#contact" class="buttoncontact">Contact</a>
+              <li>
+                <a href="#projects" class="buttonprojects">Projects</a>
               </li>
               <li>
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="menuToggle()"
-                  ><i class="fas fa-bars"></i
-                ></a>
+                <a href="about.html" class="buttonabout">About</a>
+              </li>
+              <li>
+                <a href="#contact" class="buttoncontact">Contact</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <i class="fas fa-bars"></i>
+                </a>
               </li>
             </ul>
           </nav>
@@ -54,94 +41,73 @@
       </div>
     </header>
     <main>
-        <div id="hero" class="container">
-          <div class="fade-in">
-          <h1 class="container"><span>Pixel-perfect, pretty, <br>and palatable designs <br>for
-                all people.</span>
-            </h1>
-          </div>
+      <div id="hero" class="container">
+        <div class="fade-in">
+          <h1 class="container">
+            <span>Pixel-perfect, pretty, <br>and palatable designs <br>for all people. </span>
+          </h1>
         </div>
-        <div id="projects" class="container">
-
+      </div>
+      <div id="projects" class="container"></div>
+    </main>
+    <div class="flex-container">
+      <div class="flex-item">
+        <source srcset="img/audyssey/audyssey@1x.png" media="(max-width:767px)">
+        <a href="audyssey.html">
+          <img src="img/audyssey/audyssey@2x.png" alt="Audyssey App Cover Photo">
+        </a>
+      </div>
+      <div class="flex-item">
+        <source srcset="img/mystik/mystik@1x.png" media="(max-width:767px)">
+        <a href="mystik.html">
+          <img src="img/mystik/mystik@2x.png" alt="Mystik Records App Cover Photo" class="img-same">
+        </a>
+      </div>
+      <div class="flex-item">
+        <source srcset="img/notee/notee@1x.png" media="(max-width:767px)">
+        <a href="notee.html">
+          <img src="img/notee/notee@2x.png" alt="Notee App Cover Photo" class="img-same">
+        </a>
+      </div>
+      <div class="flex-item">
+        <source srcset="img/ingrecipe/ingrecipe@1x.png" media="(max-width:767px)">
+        <a href="ingrecipe.html">
+          <img src="img/ingrecipe/ingrecipe@2x.png" alt="Ingrecipe App Cover Photo" class="img-same">
+        </a>
+      </div>
+      <div class="flex-item">
+        <source srcset="img/chatty/chatty@1x.png" media="(max-width:767px)">
+        <a href="chatty.html">
+          <img src="img/chatty/chatty@2x.png" alt="Chatty App Cover Photo" class="img-same">
+        </a>
+      </div>
+      <div class="flex-item">
+        <source srcset="img/maxtape/maxtape@1x.png" media="(max-width:767px)">
+        <a href="maxtape.html">
+          <img src="img/maxtape/maxtape@2x.png" alt="MaxTape App Cover Photo" class="img-same">
+        </a>
+      </div>
+    </div>
+    <footer id="contact">
+      <div class="container">
+        <h2>Let's connect!</h2>
+        <p></p>
+        <div>
+          <a href="mailto:office@careerfoundry.com" class="button contact">Send me an email</a>
         </div>
-  </main>
-          <div class="flex-container">
-            <div class="flex-item">
-              <source
-                srcset="img/audyssey/audyssey@1x.png"
-                media="(max-width:767px)">
-              <a href="audyssey.html"><img
-                src="img/audyssey/audyssey@2x.png"
-                alt="Audyssey App Cover Photo"></a></div>
-            <div class="flex-item">
-              <source
-                srcset="img/mystik/mystik@1x.png"
-                media="(max-width:767px)">
-              <a href="mystik.html"><img
-                src="img/mystik/mystik@2x.png"
-                alt="Mystik Records App Cover Photo"
-                class="img-same"></a></div>
-            <div class="flex-item">
-          <source srcset="img/notee/notee@1x.png" media="(max-width:767px)">
-          <a href="notee.html"><img 
-            src="img/notee/notee@2x.png" 
-            alt="Notee App Cover Photo" 
-            class="img-same"></a></div>
-            <div class="flex-item">
-              <source
-                srcset="img/ingrecipe/ingrecipe@1x.png"
-                media="(max-width:767px)">
-              <a href="ingrecipe.html"><img
-                src="img/ingrecipe/ingrecipe@2x.png"
-                alt="Ingrecipe App Cover Photo"
-                class="img-same"></a>
-            </div>
-            <div class="flex-item">
-              <source srcset="img/chatty/chatty@1x.png" media="(max-width:767px)">
-              <a href="chatty.html"><img 
-                src="img/chatty/chatty@2x.png" 
-                alt="Chatty App Cover Photo"
-                class="img-same"></a></div>
-            <div class="flex-item">
-              <source
-                srcset="img/maxtape/maxtape@1x.png"
-                media="(max-width:767px)">
-              <a href="maxtape.html"><img 
-                src="img/maxtape/maxtape@2x.png" 
-                alt="MaxTape App Cover Photo"
-                class="img-same"></a></div>
-
-          </div>
-        
-            <footer id="contact">
-              <div class="container">
-                <h2>Let's connect!</h2>
-                <p>
-        
-                </p>
-                <div>
-                  <a href="mailto:office@careerfoundry.com" class="button contact">Send me an email</a>
-                </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/trevor-barton-7a9500236/" target="_blank">
-                    <br>
-                    <img src="img/LinkedinLogo.svg" alt="LinkedIn Logo" class="linkedin"></a>
-                  <a>
-                  </a>
-                  <a>
-                  </a>
-                  <a>
-                  </a>
-                </div>
-                <p>Copyright Trevor Barton 2022</p>
-              </div>
-        
-            </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
+        <div>
+          <a href="https://www.linkedin.com/in/trevor-barton-7a9500236/" target="_blank">
+            <br>
+            <img src="img/LinkedinLogo.svg" alt="LinkedIn Logo" class="linkedin">
+          </a>
+          <a></a>
+          <a></a>
+          <a></a>
+        </div>
+        <p>Copyright Trevor Barton 2022</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
