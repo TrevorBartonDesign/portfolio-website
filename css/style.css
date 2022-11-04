@@ -159,6 +159,7 @@ a:active {
 a {
   color: #f15c7b;
   text-decoration: none;
+  cursor: pointer
 }
 
 .buttonprojects {
@@ -201,9 +202,29 @@ a {
   text-decoration: none;
 }
 
-.buttoncontact {
+.buttonresume {
   display: inline-block;
   background-color: #79bdeb;
+  color: #f15c7b;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+  font-family: 'Archivo Black';
+  font-size: 20px;
+  letter-spacing: -1px;
+  transition-duration: 0.3s;
+  transition-property: color;
+}
+
+.buttonresume:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.buttoncontact {
+  display: inline-block;
+  background-color: #ffde74;
   color: #f15c7b;
   font-weight: 700;
   padding: 10px;
@@ -423,7 +444,6 @@ nav > ul > li > a {
 
 #hero {
   padding: 20px 0;
-  display: inline-block;
   width: 100%;
 }
 
